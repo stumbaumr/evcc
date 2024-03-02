@@ -16,10 +16,11 @@ legendTopSubline = "be pertraukų"
 modalTitle = "Kaupiklio nustatymai"
 
 [batterySettings.bufferStart]
-full = "kai beveik pilnas"
+full = "kai {soc}"
 low = "kai nevisai pilnas"
 medium = "kai puspilnis"
 never = "tik su pakankamu pertekliumi"
+above = "kai virš {soc}"
 
 [config]
 
@@ -31,7 +32,7 @@ titleEdit = "Redaguoti kaupiklio skaitiklį"
 capacity = "Talpa"
 chargeStatus = "Statusas"
 chargedEnergy = "Įkrauta"
-current = "Dabartinis"
+current = "Srovė"
 enabled = "Aktyvuota"
 energy = "Energija"
 odometer = "Odometras"
@@ -174,9 +175,10 @@ blog = "Tinklaraštis"
 docs = "Dokumentacija (Vokiečių k.)"
 github = "GitHub"
 login = " Automobilių prisijungimai"
-needHelp = "Reikia pagalbos?"
+needHelp = "Reikia Pagalbos?"
 sessions = "Įkrovimo sesijos "
 settings = "Nustatymai"
+nativeSettings = "Pakeisti Serverį"
 
 [header.theme]
 auto = "Dizainas: sistemos"
@@ -253,12 +255,14 @@ remoteDisabledSoft = "{source}: adaptyvus Saulės įkrovimas išjungtas"
 solar = "Saulės"
 
 [main.loadpointSettings]
-currents = "Įkrovimo srovė"
+currents = "Įkrovimo Srovė"
 default = "standartiškai"
 disclaimerHint = "Pastaba:"
 onlyForSocBasedCharging = "Šie pasirinkimai galimi tik automobiliams su žinomu įkrovos lygiu."
 title = "Nustatymai {0}"
 vehicle = "Automobilis"
+smartCostClean = "Įkrovimas švariai iš tinklo"
+smartCostCheap = "Įkrovimas pigiai iš tinklo"
 
 [main.loadpointSettings.limitSoc]
 description = "Įkrovimo limitas, naudojamas, prijungus šį automobilį."
@@ -479,6 +483,11 @@ modalTitle = "Išmanaus tinklo įkrovimas"
 none = "nėra"
 priceLabel = "Energijos kaina"
 priceLimit = "Kainos limitas"
+saved = "Išsaugota."
+applyToAll = "Pritaikyti visur?"
+batteryDescription = "Įkrauna kaupiklį energija iš tinklo."
+cheapTitle = "Pigus įkrovimas iš tinklo"
+cleanTitle = "Švarus įkrovimas iš tinklo"
 
 [startupError]
 configFile = "Naudojamas konfiguracijos failas:"
